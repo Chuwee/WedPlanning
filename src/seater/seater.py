@@ -1,4 +1,4 @@
-from database.database import Database as d
+from wed_database.wed_database import Wed_Database as d
 
 class Seater():
     def __init__(self, max_seats, min_seats, database: d):

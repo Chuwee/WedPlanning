@@ -7,9 +7,11 @@
 # Imports
 import random
 import sqlite3
-from database.database import Database
+from wed_database.wed_database import Wed_Database as Database
 from file_parser.file_parser import Parser
 from seater.seater import Seater
+from chatter.chatter import Chatter
+from whisperer.whisperer import Whisperer
 
 DB_NAME = "database.db"
 
@@ -27,18 +29,23 @@ def main():
     print("Please enter the name of the file containing the guest list.")
     filename = input("Filename: ")
     print("Great, checking...")
-    # Check if file exists
+    # # Check if file exists
     try:
-        parser = Parser(filename)
+        whisperer = Whisperer(filename)
     except FileNotFoundError:
         print("File not found. Please try again.")
         return
     print("File found!")
     db = Database(DB_NAME)
-    seater = Seater(5, db)
+
+    whisperer.run_whisper()
 
     # Parse file
-    init_db(db, parser)
+    # init_db(db, parser)
+    agent = Chatter(db)
+    seater = Seater(5, 4, db)
+    print(agent.run_conversation())
     seater.run()
+
 
 main()

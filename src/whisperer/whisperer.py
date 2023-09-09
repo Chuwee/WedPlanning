@@ -10,6 +10,6 @@ class Whisperer():
         transcript = openai.Audio.transcribe("whisper-1", self.audio_file)
         # Save the transcript to a file
         with open("transcript.txt", "w") as f:
-            f.write(transcript)
+            f.write(transcript.get("text"))
         return transcript
     
