@@ -21,7 +21,7 @@ class Database():
             self.connection.commit()
 
     def new_table(self, first_guest):
-        self.cursor.execute("INSERT INTO tables (groupname, occupancy, guests) VALUES (?, ?, ?)", (first_guest[3], 1, "".join(first_guest[0])))
+        self.cursor.execute("INSERT INTO tables (groupname, occupancy, guests) VALUES (?, ?, ?)", (first_guest[3], 1, str(first_guest[0])))
         self.connection.commit()
     
     def get_tables_by_group(self, groupname):
@@ -38,4 +38,8 @@ class Database():
 
     def get_guests(self):
         self.cursor.execute("SELECT * FROM guests")
+        return self.cursor.fetchall()
+    
+    def get_tables(self):
+        self.cursor.execute("SELECT * FROM tables")
         return self.cursor.fetchall()
