@@ -1,121 +1,73 @@
 #
 Name: John Smith
 Age: 35
-Group: Family
+Group: Friends
+Cant: John AndersonNora Wilkinson, James McGill
+Must: Sarah Smith
 #
 Name: Sarah Johnson
 Age: 28
 Group: Friends
+Cant: John AndersonJohn Smith
+Must: 
+#
+Name: Nora Wilkinson
+Age: 30
+Group: Family
+Cant: John AndersonJames McGill
+Must: 
+#
+Name: James McGill
+Age: 32
+Group: Friends
+Cant: John AndersonNora Wilkinson
+Must: 
+#
+Name: Sarah Smith
+Age: 33
+Group: Friends
+Cant: John Anderson
+Must: John Smith
+#
+Name: Jane Doe
+Age: 27
+Group: Friends
+Cant: John Anderson
+Must: 
+#
+Name: Emily Davis
+Age: 40
+Group: Family
+Cant: John Anderson
+Must: 
 #
 Name: Michael Brown
-Age: 31
-Group: Coworker
-#
-Name: Emily Wilson
-Age: 30
-Group: Family
-#
-Name: David Miller
-Age: 27
-Group: Friends
-#
-Name: Jessica Davis
 Age: 29
-Group: Coworker
+Group: Friends
+Cant: John Anderson
+Must: 
 #
-Name: Olivia Taylor
+Name: Laura White
 Age: 26
-Group: Family
-#
-Name: William Anderson
-Age: 32
 Group: Friends
+Cant: John Anderson
+Must: 
 #
-Name: Sophia Martinez
-Age: 30
-Group: Coworker
-#
-Name: Daniel Jackson
-Age: 29
-Group: Family
-#
-Name: Ashley White
-Age: 27
-Group: Friends
-#
-Name: Christopher Harris
+Name: Lisa Anderson
 Age: 31
-Group: Coworker
-#
-Name: Mia Thomas
-Age: 28
 Group: Family
+Cant: John Anderson
+Must: John Anderson
 #
-Name: Matthew Clark
-Age: 33
-Group: Friends
-#
-Name: Chloe Lewis
-Age: 29
-Group: Coworker
-#
-Name: Ethan Turner
+Name: John Anderson
 Age: 34
-Group: Friends
-#
-Name: Lily Hall
-Age: 28
 Group: Family
+Cant: John Anderson
+Must: 
 #
-Name: Benjamin Adams
-Age: 30
-Group: Coworker
-#
-Name: Grace Wright
-Age: 26
+Name: David Wilson
+Age: 37
 Group: Friends
-#
-Name: Samuel Parker
-Age: 29
-Group: Family
-#
-Name: Aria Carter
-Age: 27
-Group: Coworker
-#
-Name: Noah Foster
-Age: 32
-Group: Friends
-#
-Name: Mia Murphy
-Age: 31
-Group: Family
-#
-Name: Oliver Scott
-Age: 33
-Group: Coworker
-#
-Name: Ava Nelson
-Age: 29
-Group: Friends
-#
-Name: Jackson King
-Age: 30
-Group: Family
-#
-Name: Sofia Hill
-Age: 27
-Group: Coworker
-#
-Name: Henry Adams
-Age: 28
-Group: Friends
-#
-Name: Amelia Walker
-Age: 29
-Group: Family
-#
-Name: Liam Bennett
-Age: 31
-Group: Coworker
+Cant: John Anderson
+Must: 
 #

@@ -26,7 +26,7 @@ class Parser():
         if self.current_line >= len(self.lines):
             return None
         guest = []
-        for i in range(3):
+        for i in range(5):
             guest.append(self.lines[self.current_line].split(": ")[1].strip())
             self.current_line += 1
         return guest

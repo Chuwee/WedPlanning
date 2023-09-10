@@ -16,7 +16,7 @@ from whisperer.whisperer import Whisperer
 DB_NAME = "database.db"
 
 # Functions
-def init_db(database, parser) -> None:
+def init_db(database, parser : Parser) -> None:
     while True:
         guest = parser.next_guest()
         if guest == None:
@@ -31,20 +31,21 @@ def main():
     print("Great, checking...")
     # # Check if file exists
     try:
-        whisperer = Whisperer(filename)
+        #whisperer = Whisperer(filename)
+        parser = Parser(filename)
     except FileNotFoundError:
         print("File not found. Please try again.")
         return
     print("File found!")
     db = Database(DB_NAME)
 
-    whisperer.run_whisper()
+    #whisperer.run_whisper()
 
     # Parse file
-    # init_db(db, parser)
-    agent = Chatter(db)
+    init_db(db, parser)
+    #agent = Chatter(db)
     seater = Seater(5, 4, db)
-    print(agent.run_conversation())
+    #print(agent.run_conversation())
     seater.run()
 
 
