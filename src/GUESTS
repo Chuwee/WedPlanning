@@ -2,25 +2,25 @@
 Name: John Smith
 Age: 35
 Group: Friends
-Cant: John AndersonNora Wilkinson, James McGill
+Cant: John Anderson, Nora Wilkinson, James McGill
 Must: Sarah Smith
 #
 Name: Sarah Johnson
 Age: 28
 Group: Friends
-Cant: John AndersonJohn Smith
+Cant: John Anderson
 Must: 
 #
 Name: Nora Wilkinson
 Age: 30
 Group: Family
-Cant: John AndersonJames McGill
+Cant: John Anderson
 Must: 
 #
 Name: James McGill
 Age: 32
 Group: Friends
-Cant: John AndersonNora Wilkinson
+Cant: John Anderson
 Must: 
 #
 Name: Sarah Smith
